@@ -1,6 +1,6 @@
 # Sprachenrad - German Language Dictionary
 
-![Sprachenrad Logo](logo.png)
+![Sprachenrad Logo](banner.png)
 
 ## Introduction
 
