@@ -2,7 +2,7 @@
 FROM openjdk:11
 
 # Build the bash shell
-RUN apk add --update bash
+RUN apt-get update && apt-get install -y bash
 
 # Set the working directory in the container
 WORKDIR /app
@@ -11,7 +11,7 @@ WORKDIR /app
 COPY target/Sprachenrad-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Expose the port that your Spring Boot application listens on
-EXPOSE 8888
+EXPOSE 8080
 
 # Command to run the Spring Boot application
-CMD ["java", "-jar", "sprachenrad-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/app/app.jar"]
