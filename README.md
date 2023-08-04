@@ -24,7 +24,7 @@ For the successful development and deployment of Sprachenrad, the following tech
 - Differentiate between regular users and administrators with different levels of access and permissions.
 
 **Database Management:**
-- Choose a suitable database (e.g., MySQL, PostgreSQL) for storing user data, dictionary entries, and other relevant information.
+- Choose a suitable database (e.g., PostgreSQL) for storing user data, dictionary entries, and other relevant information.
 - Design the database schema to efficiently handle data storage and retrieval.
 
 **RESTful API Design:**
@@ -53,12 +53,13 @@ The following features will be implemented in Sprachenrad to provide a comprehen
 
 ## Getting Started
 
-Follow these instructions to set up and run the Sprachenrad web application locally on your machine.
+Follow these instructions to set up and run the Sprachenrad web application locally on your machine using Docker Compose.
 
 1. Clone this repository.
-2. Install the required dependencies by running `npm install`.
-3. Start the backend server using `npm start`.
-4. Start the frontend development server using `npm run dev`.
+2. Make sure you have Docker Compose installed.
+3. Navigate to the project directory.
+4. Build and start the containers using `docker-compose up -d --build`.
+5. Access the application in your browser at `http://localhost:8080`.
 
 ## API Documentation
 
@@ -77,4 +78,3 @@ Sprachenrad is licensed under the [MIT License](link-to-license). Feel free to u
 *This README provides an overview of Sprachenrad, its technical and feature requirements, and instructions for getting started with the development environment. For more information about the project, refer to the relevant sections above.*
 
 ---
-
