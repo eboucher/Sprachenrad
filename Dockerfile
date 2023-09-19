@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM maven:3.8.5-jdk-17-slim AS builder
+FROM maven:3.8.5-openjdk-17-slim AS builder
 
 WORKDIR /app
 COPY pom.xml .
