@@ -9,7 +9,7 @@ COPY src/ /app/src/
 RUN mvn package -DskipTests
 
 # Stage 2: Create the final image
-FROM adoptopenjdk:17-jre-hotspot
+FROM openjdk:17-oracle
 
 WORKDIR /app
 COPY --from=builder /app/target/Sprachenrad-0.0.1-SNAPSHOT.jar /app/app.jar
