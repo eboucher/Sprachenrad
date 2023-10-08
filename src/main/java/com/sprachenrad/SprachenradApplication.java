@@ -1,4 +1,4 @@
-package com.sprachenrad.token;
+package com.sprachenrad;
 
 import static com.sprachenrad.user.Role.*;
 
