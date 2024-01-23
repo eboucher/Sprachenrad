@@ -11,8 +11,6 @@ Sprachenrad is a German language dictionary web application inspired by the conc
 - [Technical Requirements](#technical-requirements)
 - [Feature Requirements](#feature-requirements)
 - [Getting Started](#getting-started)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Technical Requirements
@@ -24,7 +22,7 @@ For the successful development and deployment of Sprachenrad, the following tech
 - Differentiate between regular users and administrators with different levels of access and permissions.
 
 **Database Management:**
-- Choose a suitable database (e.g., PostgreSQL) for storing user data, dictionary entries, and other relevant information.
+- Utilize PostgreSQL as the chosen database for storing user data, dictionary entries, and other relevant information.
 - Design the database schema to efficiently handle data storage and retrieval.
 
 **RESTful API Design:**
@@ -55,23 +53,21 @@ The following features will be implemented in Sprachenrad to provide a comprehen
 
 Follow these instructions to set up and run the Sprachenrad web application locally on your machine using Docker Compose.
 
+### Prerequisites:
+
+- Docker
+- PostgreSQL installed on your system.
+
 1. Clone this repository.
 2. Make sure you have Docker Compose installed.
 3. Navigate to the project directory.
 4. Build and start the containers using `docker-compose up -d --build`.
 5. Access the application in your browser at `http://localhost:8080`.
 
-## API Documentation
-
-For developers who wish to interact with the Sprachenrad API, detailed documentation can be found in [API Documentation](link-to-api-documentation).
-
-## Contributing
-
-We welcome contributions from the community to enhance Sprachenrad further. Please refer to our [Contribution Guidelines](link-to-contribution-guidelines) for more details on how to get involved.
 
 ## License
 
-Sprachenrad is licensed under the [MIT License](link-to-license). Feel free to use, modify, and distribute the code in accordance with the terms of the license.
+Sprachenrad is licensed under the [MIT License](https://mit-license.org/). Feel free to use, modify, and distribute the code in accordance with the terms of the license.
 
 ---
 

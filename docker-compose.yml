@@ -19,7 +19,7 @@ services:
       POSTGRES_USER: sprad_user
       POSTGRES_PASSWORD: sprad_pw
     ports:
-      - "5432:5432"
+      - "5433:5433"
     volumes:
       - ./db-init-scripts:/docker-entrypoint-initdb.d  # Mount the initialization scripts
       - postgres-data:/var/lib/postgresql/data

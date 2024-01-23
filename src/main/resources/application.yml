@@ -4,7 +4,7 @@ server:
 # PostgreSQL Configuration
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/sprachenrad_db
+    url: jdbc:postgresql://localhost:5433/sprachenrad_db
     username: sprad_user
     password: sprad_pw
     driver-class-name: org.postgresql.Driver
