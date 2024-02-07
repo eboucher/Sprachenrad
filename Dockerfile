@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy the Maven POM file
 COPY pom.xml .
 
+# Enable annotation processing for Lombok
+RUN mvn install -DskipTests
+
 # Download the Maven dependencies
 RUN mvn dependency:go-offline
 
@@ -16,7 +19,7 @@ COPY . .
 # Build the application
 RUN mvn package
 
-# Use a smaller base image for the final image
+# Runtime Stage
 FROM openjdk:17-jdk-slim
 
 # Set the working directory
